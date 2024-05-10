@@ -43,7 +43,8 @@ resource "aws_s3_bucket_public_access_block" "s3_bucket_access" {
 #### DynamoDB
 
 resource "aws_dynamodb_table" "dynamodb_tfstate_lock" {
-  name           = "tfstate-lock"
+#  name           = "tfstate-lock"
+  name           = var.dynamoDB_table_name
   hash_key       = "LockID"
   read_capacity  = 20
   write_capacity = 20
