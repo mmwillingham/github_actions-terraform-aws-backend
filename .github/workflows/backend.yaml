@@ -36,6 +36,6 @@ jobs:
         id: apply
         run: terraform apply --auto-approve
 
-#      - name: Terraform Destroy
-#        id: destroy
-#        run: terraform destroy --auto-approve
+      - name: Terraform Destroy
+        id: destroy
+        run: terraform destroy --auto-approve
