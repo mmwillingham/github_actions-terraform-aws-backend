@@ -4,5 +4,10 @@ variable "aws_region" {
 
 variable "s3_bucket_name" {
   type    = string
-  default = "tfbackend-bucket"
+  default = "bolauder-tfstate"
+}
+
+variable "dynamoDB_table_name" {
+  type    = string
+  default = "bolauder-tfstate"
 }
