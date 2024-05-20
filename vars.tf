@@ -4,10 +4,10 @@ variable "aws_region" {
 
 variable "s3_bucket_name" {
   type    = string
-  default = "rosa-tfstate-20240520"
+  default = "rosa-tfstate-20240520-2"
 }
 
 variable "dynamoDB_table_name" {
   type    = string
-  default = "rosa-tfstate-20240520"
+  default = "rosa-tfstate-20240520-2"
 }
